@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "predict-student-performance-from-game-play"
+version = "0.1.0"
+description = ""
+authors = ["Leonardo Raggio <leonardo.raggio@gmail.com>"]
+readme = "README.md"
+packages = [{include = "predict_student_performance_from_game_play"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = "^0.16.2"
+scikit-learn = "^1.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+kaggle = "^1.5.12"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+mypy = "^1.0.0"
+jupyterlab = "^3.6.1"
+matplotlib = "^3.6.3"
+seaborn = "^0.12.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
